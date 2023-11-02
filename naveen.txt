@@ -1,0 +1,22 @@
+1.Why can't I perform arithmetic on a void * pointer?
+
+2.Suppose I want to write a function that takes a generic pointer as an argument and I want to simulate passing it by reference. Can I give the formal parameter type void **, and do something like this?
+
+	void f(void **);
+	double *dp;
+	f((void **)&dp);
+
+3.How can I set an array's size at run time?
+How can I avoid fixed-sized arrays?
+
+4.Here's a neat trick: if I write
+
+	int realarray[10];
+	int *array = &realarray[-1];
+I can treat array as if it were a 1-based array.
+
+5.I want to know how many elements are in an array, but sizeof yields the size in bytes.
+
+6.I think something's wrong with my compiler: I just noticed that sizeof('a') is 2, not 1 (i.e. not sizeof(char)).
+
+7.If NULL and 0 are equivalent as null pointer constants, which should I use?
